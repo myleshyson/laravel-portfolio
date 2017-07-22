@@ -1,9 +1,11 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
 @import "variables";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//Tachyons
+@import "tachyons";
+
+//Bulma --> For cms styling. We are only going to pull in the content.
+@import "~bulma/sass/utilities/all";
+@import "~bulma/sass/elements/content";
+
+// Global Styles
+@import "global";

@@ -1,95 +1,21 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.base')
 
-        <title>Laravel</title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+<section class="pv5 pa4 sans-serif black-70">
+    <div class="mw8 center f3 content lh-copy">
+        <p>I created this little project to prove I understand everything in the Laravel documentation. Sometimes the best way to prove you know a thing is to build a thing...so I buit a thing.</p>
+        <h3 class="red">Front-End Stack for this site:</h3>
+        <ul>
+            <li>Tachyons CSS</li>
+            <li>Bulma Css -- only for the content component</li>
+            <li>Quilljs</li>
+            <li>Vuejs</li>
+            <li>highlight.js</li>
+        </ul>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+        <p>Here is a list of every feature on Laravel. Each link will take you to a page demonstrating that feauture along with code examples. Enjoy!</p>
+    </div>
+</section>
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@endsection
